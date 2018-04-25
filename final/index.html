@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- the doctype tag is used for document type declaration -->
+<html lang="en-ca">
+
+<head>
+	<!-- the head element contains information about the current document, such as its title, keywords, and other data that is not considered document content. Furthermore, the information in this element does not appear on the site itself. -->
+	<title>Tokyo: a Tourist's Guide</title>
+	<!-- Meta charset defines the character set of your document -->
+	<meta charset="utf-8">
+	<!-- Meta description tag is a SEO tag used to tell the site crawlers what your site is about -->
+	<meta name="description" content="historical and touristic information about Tokyo, Japan">
+	<!-- Meta keyword is a SEO tag used to tell the site crawlers about the keywords in your website -->
+	<meta name="keywords" content="Japan, Tokyo, information, Tourism, historical">
+	<!-- to tell the SEO crawlers to index and follow your webpage -->
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa:300">
+		<style id="font-style-1">
+			header {
+				font-family: 'Changa',serif;
+				font-size: 48px;
+			}
+			nav {
+				font-family: 'Changa',serif;
+				font-size: 20px;
+			}
+			h2 {
+				font-family: 'Changa',serif;
+				font-size: 35px;
+			}
+			h3 {
+				font-family: 'Changa',serif;
+				font-size: 26px;
+			}
+			h4 {
+				font-family: 'Changa',serif;
+				font-size: 22px;
+			}
+		</style>
+</head>
+
+<style type="text/css">
+	
+	.wrapper{
+		margin:0 auto;
+		font-family: 'arimoregular';
+	}
+
+	.btn{
+		display: inline-block;
+		padding: 10px 20px;
+		border:1px solid black;
+		cursor:pointer;
+		margin: 10px;
+	}
+
+</style>
+
+<!-- The body tag contains only the body of the html document -->
+<body class="site-content">
+
+	<!-- main tag is used to define a section of your website -->
+	<main id="main" class="main">
+		
+		<!-- Section is a structural tag the defines a section of your website -->
+		<section id="main-image-section-one" class="site-section-one">
+			<!-- img tag is used to link images to your html document -->
+			<!-- src attribute is the url of the image that you are linking -->
+			<!-- alt attribute is the text description of the image -->
+			<!-- title attribute is the text displayed when hovering over the image -->
+			<img class="Logo" src="images/cherry-blossum-logo.jpg" alt="Cherry Blossum Logo" title="Site Logo">
+			<!-- nav tag defines the navigation for your website, that will contain various lists for your website -->
+			
+			<!-- nav start -->
+			<nav class="main-nav-container desktop-nav">
+				<ul class="main-nav clearfix">
+					<li>
+					<!-- li is the list tag that defines a list element for the ul or unordered list -->
+						<a href="index.html" title="Home Page" target="_blank">Homepage</a>
+						<!-- href attribute is the actual link of the targetted page -->
+						<!-- Title attribute is the opening <a> and closing </a> is the actual text that is displayed for the link -->
+						<!-- target attribute is used to define what window to open the link in, _blank means the link will open in a new window -->
+					</li>
+					<li>
+						<a href="contact.html" title="Contact Page" target="_blank">Contact</a>
+					</li>
+					<li>
+						<a href="about.html" title="About Page" target="_blank">About</a>
+					</li>
+					<li>
+						<!-- using # we can use internal linking to access the footer -->
+						<a href="#footer">Footer</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- nav end -->
+			
+			<div class="ham">Hamburger</div>
+			<!-- mobile navigation start -->
+			<div class="mobile-nav-container">
+				<nav class="main-nav-container mobile-nav">
+					<ul class="main-nav">
+						<li>
+							<a href="index.html" title="Home Page" target="_blank">Home Page</a>
+						</li>
+						<li>
+							<a href="contact.html" title="Contact Page" target="_blank">Contact Page</a>
+						</li>
+						<li>
+							<a href="about.html" title="About Page" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="#footer">Footer internal link</a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- mobile navigation end -->
+
+		</section>
+
+	</main>
+	
+	<div class="wrapper" style="background-color: #FFF9C4;">
+		<h4>Change Color Scheme</h4>
+		<div class="btn red" id="red">Red</div>
+		<div class="btn orange" id="orange">Orange</div>
+		<div class="btn yellow" id="yellow">Yellow</div>
+		<div class="btn green" id="green">Green</div>
+		<div class="btn blue" id="blue">Blue</div>
+		<div class="btn purple" id="purple">Purple</div>
+		<div class="btn pink" id="pink">Pink</div>
+	</div>
+
+	<header id="page-title" class="header">
+		<!-- the header is a structural element - it defines a part of the page as the header and all the content inside it as heading content -->
+
+		<!-- id attribute is used to give a unique identification to your html elements -->
+		<!-- Note: two elements cannot have the same id -->
+		<!-- two-worded id must be seperated by -, ex: page-title -->
+
+		<!-- class attribute is used as identification for groups of elements -->
+		<!-- unlike the id, multiple elements can have the same class -->
+		<h1 id="header-one" class="heading">Tokyo: a Tourist's Guide</h1>
+		<!-- the h tags, <h1> to <h6>, define headings on your site. <h1> is the most important heading, and <h6> is the least important. -->
+	</header>
+	
+	<section id="main-image-section-two">
+		<img src="images/Kimono-landscape.png" alt="Kimono Landscape" title="Two women in Kimonos">
+	</section>
+
+	<section id="main-content-section-one" class="site-section-two">
+		<h2 id="heading-two" class="heading-two">Top Touristic and Historical Areas of Tokyo</h2>
+
+		<p id="paragraph-one">
+			Tokyo is the capital of Japan and one of the world's beautiful metropolises. Here are some of its most popular tourist attractions and historical areas.
+		</p>
+		
+		<h3 id="heading-three-1" class="heading">Asukuza</h3>
+
+		<div>
+			<img src="images/Asakusa-Taito.png" alt="Asukusa">
+		</div>
+
+		<p id="paragraph-two">
+			Asakusa is one of Tokyo’s many districts and is located in the center of the metropolis’ “low city”, a historical area where an atmosphere of the Tokyo of old survives. During the Edo Period of Japan, from 1603-1867, Asakusa had many Kabuki theaters and a large red-light district. Modern forms of entertainment, such as movie theaters, would also appear in the 1800s and early 1900s. Even though large areas of the district were destroyed during World War 2, it has been rebuilt and been slowly regaining its popularity.
+		</p>
+
+		<h3 id="heading-three-2" class="heading">The Tokyo National Museum</h3>
+
+		<p id="paragraph-three">
+			The Tokyo National Museum was originally established in 1972 and is the oldest and largest of Japan’s museums. It features six separate buildings, which all specialize in different types of art and exhibitions and one of the largest collections of art and archeological artifacts in Japan. The museum also offers a Japanese-style garden and teahouses, as well as many shops and cafes that are spread out around the grounds.
+		</p>
+
+		<h3 id="heading-three-3">Sensoji Temple</h3>
+
+		<div>
+			<img src="images/Sensoji-Temple.png" alt="Sensoji Temple">
+		</div>
+
+		<p id="paragraph-four">
+			Sensoji is a Buddhist temple and one of Tokyo’s most colorful and popular temples. It was completed in 645, which makes it Tokyo’s oldest temple. Many events are held throughout the year, the biggest of which is the Sanja Matsuri in May, the temple’s annual festival.
+		</p>
+
+		<h3 id="heading-three-4">The Meiji Shrine</h3>
+
+		<p id="paragraph-five">
+			The Meiji Shrine is dedicated to the deified spirits of Emperor Meiji and Empress Shoken and is one of Japan’s most popular shrines. The shrine is a part of a large forested area in Tokyo and offers many walking paths which are excellent for a good stroll. During the New Year, the shrine welcomes over 3 million visitors, even more than any other shrine or temple in the country.
+		</p>
+
+		<h3 id="heading-three-5">Tokyo Skytree</h3>
+
+		<div>
+			<img src="images/Tokyo-skytree.png" alt="Tokyo Skytree">
+		</div>
+
+		<p id="paragraph-six">
+			The Tokyo Skytree is a television broadcasting tower, stands at a height of 634 meters, and stands as the landmark of Tokyo. It is the tallest structure in Japan and it’s one of the tallest buildings in the world. The tower has two observation decks, as well as a large shopping complex and aquarium at the base of the tower.
+		</p>
+		
+		<h3 id="heading-three-6">The Kabuki-Za Theater</h3>
+
+		<p id="paragraph-seven">
+			The Kabuki-za Theater is one of the most popular theaters in Tokyo. It specializes in the traditional Kabuki drama form, which are highly skilled theatrical performances that are popular with tourists and Japanese locals alike. The theater itself can hold up to 2500 guests, while still keeping an intimate and familiar atmosphere.
+		</p>
+
+		<h3 id="heading-three-7">Ginza District</h3>
+
+		<div>
+			<img src="images/Tokyo-cityscape.png" alt="Tokyo Cityscape">
+		</div>
+
+		<p id="paragraph-eight">
+			Ginza district is Tokyo’s busiest shopping area and it’s been Japan’s commercial center for centuries. It’s lined by various shops and stores, which is pleasant is wander through or to relax in the many tea and coffee shops. All the stores are open on weekends and there is no traffic in the district, which makes it a shopper’s paradise and one of largest pedestrian areas of the world.
+		</p>
+
+		<h3 id="heading-three-8">Akiharabara</h3>
+
+		<p id="paragraph-nine">
+			The Akihabara district is famous for its many electronics shops and it has recently gained recognition as the center of Japan’s otaku culture. The district offers all sorts of electronics and otaku merchandise in its stores and shops.
+		</p>
+
+
+	</section>
+
+	<!-- footer is a structural tag used to define the footer of your document -->
+	<footer id="footer">
+		<div>
+			<section class="col-footer contact-info">
+				<h4>Contact Us</h4>
+				<p>Marina De Melo Letourneau</p>
+				<p>613-727-4723</p>
+				<p>1385 Woodroffe Avenue, Ottawa, Ontario K2G 1V8</p>
+			</section>
+			<section class="col-footer social-media">
+				<h4>Social Media</h4>
+					<ul class="external-links">
+						<li>
+							<a href="facebook.com">Facebook</a>
+						</li>
+						<li>
+							<a href="youtube.com">Youtube</a>
+						</li>
+						<li>
+							<a href="instagram.com">Instagram</a>
+						</li>
+						<li>
+							<a href="twitter.com">Twitter</a>
+						</li>
+					</ul>
+			</section>
+			<section class="col-footer copyright">
+				<h4>Copyright</h4>
+				<!-- &copy; will display a copyright symbol when used in HTML -->
+				<p>copyright &copy; 2018, Marina De Melo Letourneau</p>
+			</section>
+		</div>
+	</footer>
+
+	<script src="scripts/main.js"></script>
+	
+</body>
+</html>

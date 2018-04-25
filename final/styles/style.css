@@ -1,0 +1,383 @@
+/* this is a CSS comment*/
+/* sublime text shortcut for comment is ctrl + / */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*Font Styles*/
+
+@font-face {
+    font-family: 'arimoregular';
+    src: url('../fonts/Arimo-Regular-webfont.eot');
+    src: url('../fonts/Arimo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Arimo-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Arimo-Regular-webfont.woff') format('woff'),
+         url('../fonts/Arimo-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Arimo-Regular-webfont.svg#arimoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* COLOR SCHEME
+
+Black       #000000
+White       #FFFFFF
+Red         #F44336
+Dark Red    #B71C1C
+Beige       #FFF9C4
+Gold        #FFB300
+
+*/
+
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
+.col-main, .col-footer, img {
+	width:100%;
+}
+
+
+/* Header styles */ 
+header {
+	background: #FFB300;
+}
+
+.Logo {
+	float: left;
+	width:100px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #000000;
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+/*Site Navigation CSS*/
+
+.desktop-nav {
+	float: right;
+	width: calc(100% - 100px);
+	display: none;
+	max-width: 600px;
+}
+
+.desktop-nav ul {
+	width: 100%
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 25%;
+	height: 100%;
+	float: left;
+	background: #FFB300;
+	/*This is required to make sub-nav positioned absolute to the main navigation li containers*/
+	position: relative;
+	font-size: 1rem;
+}
+
+/*Target the first child and add border-top-left, border-bottom-left radius*/
+.desktop-nav li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+/*target the last child and add border-top-right and border-top-left radius*/
+.desktop-nav li:last-child {
+	border-radius: 0 10px 10px 0;
+}
+
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	border-left: 2px solid #444; 
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.3rem;
+
+	/* see week 10 for more examples on styling and navigation*/
+}
+
+/*This piece of CSS is used to make sub-nav show when the main li is hovered */
+/* > is called the direct child selector*/
+.desktop-nav > ul > li:hover {
+	display: block;
+}
+
+.ham {
+	float: right;
+	background: #FFFFFF;
+}
+
+.mobile-nav {
+	width: 100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #FFB300;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+
+/*main content styles, includes heading, content, and footer */
+
+.site-content {
+	background-color: #B71C1C;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+main {
+	background-color: #000000;
+}
+
+img#Logo {
+	background: #F44336;
+}
+
+/*heading styles*/
+
+header {
+	background-color: #FFB300;
+	padding: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+h1 {
+	padding: 10px;
+	font-size: 3rem;
+}
+
+h2 {
+	padding: 5px;
+	font-size: 2rem;
+	background-color: #FFF9C4;
+}
+
+h3 {
+	padding: 5px;
+	font-size: 1.5rem;
+}
+
+h4 {
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+
+/* content styles: Contact.html */
+
+.form {
+	padding: 8px;
+	background-color: #FFF9C4;
+}
+
+label {
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+textarea {
+	padding: 10px;
+}
+
+input {
+	padding: 3px;
+}
+
+input.submit {
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+/* Range Slider Styles */
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    border-radius: 5px;
+    background: #000000; /* Black background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #F44336; /* Red background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #F44336; /* Red background */
+    cursor: pointer; /* Cursor on hover */
+} 
+
+/*paragraph styles*/
+
+section#main-content-section-one {
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #FFF9C4;
+}
+
+section#main-content-section-two {
+	padding: 10px;
+	font-size: 1rem;
+	background-color: #FFF9C4;
+}
+
+p {
+	padding: 8px;
+	font-family: 'arimoregular';
+}
+
+.main-text {
+	font-family: 'arimoregular';
+}
+
+/*footer styles*/
+
+footer {
+	padding: 10px;
+	background-color: #000000;
+}
+
+.contact-info {
+	background-color: #FFB300;
+}
+
+.social-media {
+	background-color: #FFB300;
+}
+
+.copyright {
+	background-color: #FFB300;
+}
+
+.external-links {
+	text-decoration: none;
+	font-family: 'arimoregular';
+	
+}
+
+/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	
+	header, main, footer {
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #000000;
+	}
+}

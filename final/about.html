@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>About Page</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa:300">
+		<style id="font-style-1">
+			header {
+				font-family: 'Changa',serif;
+				font-size: 48px;
+			}
+			nav {
+				font-family: 'Changa',serif;
+				font-size: 20px;
+			}
+			h2 {
+				font-family: 'Changa',serif;
+				font-size: 35px;
+			}
+			h3 {
+				font-family: 'Changa',serif;
+				font-size: 26px;
+			}
+			h4 {
+				font-family: 'Changa',serif;
+				font-size: 22px;
+			}
+		</style>
+	<meta charset="utf-8">
+	<meta name="description" content="information about the website and its goals">
+	<meta name="keywords" content="contact, information">
+	<meta name="robots" content="index, follow">
+</head>
+
+<style type="text/css">
+	
+	.wrapper{
+		margin:0 auto;
+		font-family: 'arimoregular';
+	}
+
+	.btn{
+		display: inline-block;
+		padding: 10px 20px;
+		border:1px solid black;
+		cursor:pointer;
+		margin: 10px;
+	}
+
+</style>
+
+<body class="site-content">
+
+	<main id="main" class="main">
+		<section id="main-image-section-one" class="site-section">
+			<img class="Logo" src="images/cherry-blossum-logo.jpg" alt="Cherry Blossum Logo" title="Site Logo">
+			
+			<!-- nav start -->
+			<nav class="main-nav-container desktop-nav">
+				<ul class="main-nav clearfix">
+					<li>
+					<!-- li is the list tag that defines a list element for the ul or unordered list -->
+						<a href="index.html" title="Homepage" target="_blank">Homepage</a>
+						<!-- href attribute is the actual link of the targetted page -->
+						<!-- Title attribute is the opening <a> and closing </a> is the actual text that is displayed for the link -->
+						<!-- target attribute is used to define what window to open the link in, _blank means the link will open in a new window -->
+					</li>
+					<li>
+						<a href="contact.html" title="Contact Page" target="_blank">Contact</a>
+					</li>
+					<li>
+						<a href="about.html" title="About Page" target="_blank">About</a>
+					</li>
+					<li>
+						<!-- using # we can use internal linking to access the footer -->
+						<a href="#footer">Footer</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- nav end -->
+
+			<div class="ham">Hamburger</div>
+			<!-- mobile navigation start -->
+			<div class="mobile-nav-container">
+				<nav class="main-nav-container mobile-nav">
+					<ul class="main-nav">
+						<li>
+							<a href="index.html" title="Home Page" target="_blank">Home Page</a>
+						</li>
+						<li>
+							<a href="contact.html" title="Contact Page" target="_blank">Contact Page</a>
+						</li>
+						<li>
+							<a href="about.html" title="About Page" target="_blank">About</a>
+						</li>
+						<li>
+							<a href="#footer">Footer internal link</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- mobile navigation end -->
+
+	</main>
+
+	<div class="wrapper" style="background-color: #FFF9C4;">
+		<h4>Change Color Scheme</h4>
+		<div class="btn red" id="red">Red</div>
+		<div class="btn orange" id="orange">Orange</div>
+		<div class="btn yellow" id="yellow">Yellow</div>
+		<div class="btn green" id="green">Green</div>
+		<div class="btn blue" id="blue">Blue</div>
+		<div class="btn purple" id="purple">Purple</div>
+		<div class="btn pink" id="pink">Pink</div>
+	</div>
+
+		<header id="page-title" class="header">
+			<h1 id="header-one" class="heading">Tokyo: a Tourist's Guide</h1>
+		</header>	
+
+		<section id="main-image-section-two" class="site-section">
+			<img src="images/mount-fuji.png" alt="Tokyo Station" title="Tokyo Station">
+		</section>
+		
+	<section id="main-content-section-one" class="site-section-two">
+		<h2 id="heading-two" class="heading-two">About Us</h2>
+		<p id="paragraph-one">
+			This site was created with the intention of educating people about Tokyo's historical and touristic areas. The Japanese metropolis is incredibly interesting and exciting to visit, with thousands of visitors and tourists each year. There are a lot of amazing places to visit, so this site details the most popular locations to go and visit. 
+		</p>
+	</section>
+
+	<!-- footer is a structural tag used to define the footer of your document -->
+	<footer id="footer">
+		<div>
+			<section class="col-footer contact-info">
+				<h4>Contact Us</h4>
+				<p>Marina De Melo Letourneau</p>
+				<p>613-727-4723</p>
+				<p>1385 Woodroffe Avenue, Ottawa, Ontario K2G 1V8</p>
+			</section>
+			<section class="col-footer social-media">
+				<h4>Social Media</h4>
+					<ul class="external-links">
+						<li>
+							<a href="facebook.com">Facebook</a>
+						</li>
+						<li>
+							<a href="youtube.com">Youtube</a>
+						</li>
+						<li>
+							<a href="instagram.com">Instagram</a>
+						</li>
+						<li>
+							<a href="twitter.com">Twitter</a>
+						</li>
+					</ul>
+			</section>
+			<section class="col-footer copyright">
+				<h4>Copyright</h4>
+				<!-- &copy; will display a copyright symbol when used in HTML -->
+				<p>copyright &copy; 2018, Marina De Melo Letourneau</p>
+			</section>
+		</div>
+	</footer>
+
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>

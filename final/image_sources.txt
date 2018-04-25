@@ -1,0 +1,17 @@
+Image Sources:
+
+cherry-blossum-logo: sourced from Pixabay, Retrieved from https://www.pexels.com/photo/beautiful-bloom-blooming-blossom-371393/
+
+Tokyo-cityscape.png: photographed by Ben Chung, Retrieved from https://www.pexels.com/photo/architecture-billboards-buildings-cars-427747/
+
+mount-fuji.png: Retrieved from https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
+
+Tokyo-station.png: Photo by Carina Sze on Unsplash, Retrieved from https://unsplash.com/photos/ay8pWdlM5_o
+
+Asakusa-Taito.png: Photo by Jezael Melgoza on Unsplash, Retrieved from https://unsplash.com/photos/C1iBdKkR2aY
+
+Sensoji-Temple.png: Photo by Redd Angelo on Unsplash, Retrieved from https://unsplash.com/photos/B0Thq_Qu9Zk
+
+Kimono-landscape.png: Photo by Sorasak on Unsplash, Retrieved from https://unsplash.com/photos/_UIN-pFfJ7c
+
+Tokyo-skytree.png: Photo by Yu Kato on Unsplash, Retrieved from https://unsplash.com/photos/wvqzl5AJ7FM
